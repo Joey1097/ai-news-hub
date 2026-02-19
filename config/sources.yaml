@@ -9,13 +9,28 @@ sources:
       - "学习资源"
     priority: high
     
-  # 可添加更多数据源...
-  # github-pi-mono:
-  #   type: github
-  #   name: "Pi-Mono"
-  #   url: "https://github.com/badlogic/pi-mono"
-  #   check_interval: daily
-  #   categories:
-  #     - "AI Agent"
-  #     - "开源项目"
-  #   priority: medium
+  cheerselfai-blog:
+    type: web_scraper
+    name: "CheerselfAI 林悦己"
+    url: "https://cheerselfai.com/blog"
+    check_interval: weekly
+    categories:
+      - "AI资料"
+      - "提示词"
+      - "工具推荐"
+    priority: medium
+    selectors:
+      article: "article"
+      title: "h2"
+      link: "a"
+      date: "time"
+    
+  cheerselfai-resources:
+    type: web_scraper
+    name: "CheerselfAI 资源"
+    url: "https://cheerselfai.com/resources"
+    check_interval: weekly
+    categories:
+      - "AI资料"
+      - "学习资源"
+    priority: medium

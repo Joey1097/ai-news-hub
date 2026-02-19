@@ -9,6 +9,7 @@ from typing import Dict, Any
 from datetime import datetime
 
 from .adapters.github import GitHubAdapter
+from .adapters.web_scraper import WebScraperAdapter
 from .core.database import Database
 from .core.dedup import DedupEngine
 from .core.classifier import Classifier
@@ -59,6 +60,8 @@ class NewsScheduler:
         
         if source_type == 'github':
             return GitHubAdapter(source_id, source_config)
+        elif source_type == 'web_scraper':
+            return WebScraperAdapter(source_id, source_config)
         # 可添加更多适配器...
         
         raise ValueError(f"Unknown source type: {source_type}")
