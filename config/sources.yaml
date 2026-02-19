@@ -1,0 +1,21 @@
+sources:
+  github-ai-handbook:
+    type: github
+    name: "AI Engineer Handbook"
+    url: "https://github.com/DataExpert-io/ai-engineer-handbook"
+    check_interval: daily
+    categories:
+      - "AI工程"
+      - "学习资源"
+    priority: high
+    
+  # 可添加更多数据源...
+  # github-pi-mono:
+  #   type: github
+  #   name: "Pi-Mono"
+  #   url: "https://github.com/badlogic/pi-mono"
+  #   check_interval: daily
+  #   categories:
+  #     - "AI Agent"
+  #     - "开源项目"
+  #   priority: medium
