@@ -13,7 +13,7 @@ sources:
     type: web_scraper
     name: "CheerselfAI 林悦己"
     url: "https://cheerselfai.com/blog"
-    check_interval: weekly
+    check_interval: "48h"
     categories:
       - "AI资料"
       - "提示词"
@@ -29,7 +29,7 @@ sources:
     type: web_scraper
     name: "CheerselfAI 资源"
     url: "https://cheerselfai.com/resources"
-    check_interval: weekly
+    check_interval: "48h"
     categories:
       - "AI资料"
       - "学习资源"
