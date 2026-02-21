@@ -1,0 +1,47 @@
+# 数据源配置 - CheerselfAI 资源页
+# 监控 CheerselfAI 资源页面更新
+
+name: "CheerselfAI Resources"
+description: "CheerselfAI 资源页 - AI 工具和资源集合"
+type: web
+url: "https://cheerselfai.com/resources"
+
+# 检查频率
+check_interval: "daily"
+
+# 分类标签
+categories:
+  - "资源"
+  - "AI工具"
+  - "工具集合"
+  - "CheerselfAI"
+
+# 优先级
+priority: medium
+
+# 内容筛选
+filter:
+  selectors:
+    - ".resource-item"
+    - ".tool-card"
+    - "article"
+  keywords:
+    - "工具"
+    - "资源"
+    - "AI"
+    - "推荐"
+
+# 通知设置
+notifications:
+  enabled: true
+  on_change: true
+  channels:
+    - feishu
+    - webchat
+
+# 元数据
+metadata:
+  author: "CheerselfAI"
+  language: "zh"
+  created_at: "2026-02-21"
+  updated_at: "2026-02-21"
