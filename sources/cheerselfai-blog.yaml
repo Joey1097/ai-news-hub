@@ -1,0 +1,47 @@
+# 数据源配置 - CheerselfAI 博客
+# 监控 CheerselfAI 博客文章更新
+
+name: "CheerselfAI Blog"
+description: "CheerselfAI 博客 - AI 技术文章和教程"
+type: rss
+url: "https://cheerselfai.com/blog"
+
+# RSS 源地址（如果与主 URL 不同）
+rss_url: "https://cheerselfai.com/blog/rss.xml"
+
+# 检查频率
+check_interval: "daily"
+
+# 分类标签
+categories:
+  - "博客"
+  - "AI教程"
+  - "技术文章"
+  - "CheerselfAI"
+
+# 优先级
+priority: medium
+
+# 内容筛选（可选）
+filter:
+  keywords:
+    - "AI"
+    - "机器学习"
+    - "深度学习"
+    - "LLM"
+    - "大模型"
+
+# 通知设置
+notifications:
+  enabled: true
+  on_new_post: true
+  channels:
+    - feishu
+    - webchat
+
+# 元数据
+metadata:
+  author: "CheerselfAI"
+  language: "zh"
+  created_at: "2026-02-21"
+  updated_at: "2026-02-21"
